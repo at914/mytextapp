@@ -34,9 +34,9 @@ export default function Textform(props) {
                     <label htmlFor="myBox" className="form-label">Example textarea</label>
                     <textarea className="form-control" value={text} onChange={handleOnChange} id="myBox" rows="8" style={{ backgroundColor: 'gray', color: 'white' }}></textarea>
                 </div>
-                <button className="btn btn-primary mx-2" onClick={handleUpClick}>Convert to Uppercase</button>
-                <button className="btn btn-primary mx-2" onClick={handleLowerClick}>Convert to Lowercase</button>
-                <button className="btn btn-primary mx-2" onClick={handleClearText}>Clear Text</button>
+                <button className="btn btn-primary mx-2 my-1" onClick={handleUpClick}>Convert to Uppercase</button>
+                <button className="btn btn-primary mx-2 my-1" onClick={handleLowerClick}>Convert to Lowercase</button>
+                <button className="btn btn-primary mx-2 my-1" onClick={handleClearText}>Clear Text</button>
             </div>
             <div className="container">
                 <p>{text.split(" ").length} words and {text.length} characters</p>
